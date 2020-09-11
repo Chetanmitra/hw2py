@@ -19,22 +19,27 @@ def getGradePoint(grade):
     return 1.0
   else:
     return 0.0
+def run():
 
-c1grade = input("Enter your course 1 letter grade: ")
-gradepoint1 = getGradePoint(c1grade)
-credit1 = float(input("Enter your course 1 credit: "))
-print(f"Grade point for course 1 is: {gradepoint1}")
-
-c2grade = input("Enter your course 2 letter grade: ")
-gradepoint2 = getGradePoint(c2grade)
-credit2 = float(input("Enter your course 2 credit: "))
-print(f"Grade point for course 2 is: {gradepoint2}")
-
-c3grade = input("Enter your course 3 letter grade: ")
-gradepoint3 = getGradePoint(c3grade)
-credit3 = float(input("Enter your course 3 credit: "))
-print(f"Grade point for course 3 is: {gradepoint3}")
+  c1grade = input("Enter your course 1 letter grade: ")
+  gradepoint1 = getGradePoint(c1grade)
+  credit1 = float(input("Enter your course 1 credit: "))
+  print(f"Grade point for course 1 is: {gradepoint1}")
 
 
-GPA = (gradepoint1 * credit1 + gradepoint2 * credit2 + gradepoint3 * credit3) / (credit1 + credit2 + credit3) 
-print(f"Your GPA is: {GPA}")
+  c2grade = input("Enter your course 2 letter grade: ")   
+  gradepoint2 = getGradePoint(c2grade)
+  credit2 = float(input("Enter your course 2 credit: ")) 
+  print(f"Grade point for course 2 is: {gradepoint2}")
+
+
+  c3grade = input("Enter your course 3 letter grade: ")
+  gradepoint3 = getGradePoint(c3grade)
+  credit3 = float(input("Enter your course 3 credit: "))
+  print(f"Grade point for course 3 is: {gradepoint3}")
+  
+  GPA = (gradepoint1 * credit1 + gradepoint2 * credit2 + gradepoint3 * credit3) / (credit1 + credit2 + credit3) 
+  print(f"Your GPA is: {GPA}")
+
+if __name__ == "__main__":
+  run()
