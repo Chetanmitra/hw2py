@@ -1,6 +1,6 @@
 # Author: Chetan Mitra czm5805@psu.edu
 
-def getGradepoint(grade):
+def getGradePoint(grade):
   if grade=="A":
     return 4.0
   elif grade =="A-":
@@ -21,17 +21,17 @@ def getGradepoint(grade):
     return 0.0
 
 c1grade = input("Enter your course 1 letter grade: ")
-gradepoint1 = getGradepoint(c1grade)
+gradepoint1 = getGradePoint(c1grade)
 credit1 = float(input("Enter your course 1 credit: "))
 print(f"Grade point for course 1 is: {gradepoint1}")
 
 c2grade = input("Enter your course 2 letter grade: ")
-gradepoint2 = getGradepoint(c2grade)
+gradepoint2 = getGradePoint(c2grade)
 credit2 = float(input("Enter your course 2 credit: "))
 print(f"Grade point for course 2 is: {gradepoint2}")
 
 c3grade = input("Enter your course 3 letter grade: ")
-gradepoint3 = getGradepoint(c3grade)
+gradepoint3 = getGradePoint(c3grade)
 credit3 = float(input("Enter your course 3 credit: "))
 print(f"Grade point for course 3 is: {gradepoint3}")
 
